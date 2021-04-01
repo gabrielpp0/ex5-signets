@@ -42,7 +42,7 @@ export async function lireTout(uid) {
 export async function supprimer(uid, idd) {
   /************************************************************** Exercice #5 : question B **************************/
   // Une seule ligne de code suffit
-  return await db.collection("utilisateur").doc("dossier").delete();
+  return await firestore.collection("utilisateur").doc("dossier").delete();
 }
 
 /**
